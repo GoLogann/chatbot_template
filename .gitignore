@@ -1,0 +1,75 @@
+# =========================================
+# 🚫 Python & Virtualenv
+# =========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.sqlite
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+
+# =========================================
+# 🐍 Poetry / Pip
+# =========================================
+pip-wheel-metadata/
+build/
+dist/
+*.egg
+*.whl
+
+# =========================================
+# 🧱 IDEs e SO
+# =========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================================
+# 🔒 Configs Sensíveis
+# =========================================
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.keystore
+*.jks
+*.bak
+
+# =========================================
+# 🗂️ Logs, Cache e Relatórios
+# =========================================
+*.log
+*.tmp
+*.cache
+*.pid
+*.seed
+nohup.out
+
+
+# =========================================
+# 🧠 LangChain / LangGraph / Langfuse
+# =========================================
+langfuse_data/
+langgraph_checkpoints/
+__langcache__/
+cache/
+logs/
+trace_output/
+
+# =========================================
+# 🗄️ STORAGE LOCAL — BLOQUEIO TOTAL
+# =========================================
+# 🔒 Nenhum arquivo de storage deve ser versionado
+storage/
+storage/*
+!storage/.gitkeep
