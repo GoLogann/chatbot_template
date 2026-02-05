@@ -1,0 +1,63 @@
+# =========================================
+# 🚫 Python / Venv / Cache
+# =========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+build/
+dist/
+
+# =========================================
+# 🧱 Configs Locais
+# =========================================
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.keystore
+*.jks
+
+# =========================================
+# 🧰 Git & IDE
+# =========================================
+.git/
+.gitignore
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================================
+# 🗂️ Logs, Cache, Reports
+# =========================================
+*.log
+*.tmp
+*.cache
+*.pid
+nohup.out
+
+# =========================================
+# 🧱 Docker
+docker-compose.override.yml
+*.tar
+*.img
+
+# =========================================
+# 🗄️ STORAGE LOCAL — BLOQUEIO TOTAL
+# =========================================
+# 🔒 Nunca copie o diretório de storage para o build
+storage/
+storage/*
+!storage/.gitkeep
