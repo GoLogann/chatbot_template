@@ -746,8 +746,8 @@ LANGFUSE_SECRET_KEY=sk-xxx
 ```mermaid
 erDiagram
     CHAT {
-        string pk PK "USER#user_id"
-        string sk "CHAT#chat_id"
+        string partition_key "USER#user_id"
+        string sort_key "CHAT#chat_id"
         string title
         string created_at
         string updated_at
@@ -755,8 +755,8 @@ erDiagram
     }
 
     SESSION {
-        string pk PK "CHAT#chat_id"
-        string sk "SESSION#session_id"
+        string partition_key "CHAT#chat_id"
+        string sort_key "SESSION#session_id"
         string user_id
         string started_at
         string ended_at
@@ -764,8 +764,8 @@ erDiagram
     }
 
     MESSAGE {
-        string pk PK "CHAT#chat_id"
-        string sk "MSG#timestamp#msg_id"
+        string partition_key "CHAT#chat_id"
+        string sort_key "MSG#timestamp#msg_id"
         string role
         string content
         string created_at
